@@ -37,7 +37,6 @@ public class Heartbeat_Controller : MonoBehaviour {
         StartCoroutine(LoadTrack(meta.musicPath, meta));
 
         debugText.text = "Title: " + meta.title +
-                         "\nSubtitle: " + meta.subtitle +
                          "\nArtist: " + meta.artist +
                          "\nBanner Path: " + meta.bannerPath +
                          "\nBackground Path: " + meta.backgroundPath +
@@ -48,8 +47,8 @@ public class Heartbeat_Controller : MonoBehaviour {
                          "\nBPM: " + meta.bpm +
                          "\n\nValid: " + meta.valid;
 
-        originalBPM = meta.bpm;
-
+        if (meta.bpm != 0) originalBPM = meta.bpm;
+        else originalBPM = 120;
         currentBPM = originalBPM;
         prevBPM = currentBPM;
     }
@@ -140,20 +139,10 @@ public class Heartbeat_Controller : MonoBehaviour {
             editingBPM = false;
         }
 	}
-    /*
-	void BPMDecay()
-	{
-        if ((decayTimer -= Time.deltaTime) <= 0)
-        {
-            float changeInY = Mathf.Abs(currentBPM - prevBPM);
-            prevBPM = currentBPM;
-            currentBPM = Mathf.Clamp((currentBPM - changeInY), 0, Mathf.Infinity);
-            decayTimer = prevBeatTimer;
-        }
-    }*/
 
     void SongBPMChange()
     {
+        /* when kari stops testing -> uncomment
         float newPitch = currentBPM / originalBPM;
         if (Mathf.Abs(audioSource.pitch - newPitch) > lerpLimit)
         {
@@ -163,5 +152,6 @@ public class Heartbeat_Controller : MonoBehaviour {
         {
             audioSource.pitch = currentBPM / originalBPM;
         }
+          */
     }
 }

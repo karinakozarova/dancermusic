@@ -1,36 +1,24 @@
-#TITLE: - Friday I'm in Love;
-#SUBTITLE:;
-#ARTIST:The Cure;
-#TITLETRANSLIT:;
-#SUBTITLETRANSLIT:;
-#ARTISTTRANSLIT:;
-#GENRE:;
-#CREDIT:;
-#MUSIC:The Cure - Friday I'm in Love.ogg;
-#BANNER:;
-#BACKGROUND:;
-#CDTITLE:;
-#SAMPLESTART:0.000;
-#SAMPLELENGTH:0.000;
-#SELECTABLE:YES;
-#OFFSET:-1.066;
-#BPMS:0.000=136.216
-,1.000=136.216
-;
-#STOPS:;
-#BGCHANGES:;
-#FGCHANGES:;
-//--------------- dance-single - Basic ----------------
+//--------------- dance-single ----------------
 #NOTES:
-     dance-single:
-     beginner:
-     Easy:
-     4:
-     0,0,0,0,0:
+    dance-single:
+	:
+    Medium:
+    6:
+    0.307,0.285,0.447,0.000,0.000:
 0000
 0000
-0001
-0001
+0000
+0000
+,
+0000
+0000
+0000
+0000
+,
+0000
+0000
+0000
+0000
 ,
 0001
 1000
